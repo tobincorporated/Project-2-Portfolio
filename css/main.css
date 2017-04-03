@@ -19,6 +19,7 @@ h2 {
   text-align: left;
   color:#555;
   margin-top: 20px;
+  width: 100%;
 }
 
 h3 {
@@ -127,7 +128,7 @@ hr {
   figure {
       width: 100%;
   }
-  
+
   .logo {
     width: 33%;
   }
