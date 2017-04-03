@@ -1,12 +1,12 @@
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    margin: 0 0 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 0 0;
 }
 
 h1 {
@@ -44,82 +44,92 @@ a {
   min-height: 48px;
 }
 
+header,
+section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+figure {
+  width: 33.33%;
+  padding: 10px;
+}
+
 hr {
   color: #999;
 }
 
-.centerpiece {
-  max-width: 800px;
-}
-
 .grid {
-    padding-top: 15px;
-    max-width: 1200px;
-    width: 100%;
-    background: linear-gradient(130deg, #fff, #ddd);
-}
-
-.row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  padding-top: 15px;
+  max-width: 1200px;
+  width: 100%;
+  background: linear-gradient(130deg, #fff, #ddd);
 }
 
 .logo {
-    width: 16.66%;
-    max-width: 200px;
-}
-
-.sample {
-    width: 33.33%;
-    padding: 10px;
+  width: 16.66%;
+  max-width: 200px;
+  max-height: 100px;
 }
 
 .name {
-    width: 83.33%;
+  width: 83.33%;
 }
 
-.fullwidth {
-    width: 100%;
-    margin-top: 10px;
-}
 .end {
   text-align: right;
-  padding-right: 10px;
+  padding-right: 15px;
+}
+
+.centerpiece {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 800px) {
-  h1,h3,h2 {
+  h1,
+  h2,
+  h3 {
     font-size: 36px;
   }
+
   p {
     font-size: 24px;
   }
 
-  .sample {
-      width: 50%;
-      margin:0 auto 20px auto;
+  figure {
+    width: 50%;
+    margin:0 auto 20px auto;
   }
-  .logo {
-    width: 33%;
-  }
+
   .name {
     width:66%;
   }
 }
+
 @media only screen and (max-width: 500px) {
-  .sample{
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2,
+  h3 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  figure {
       width: 100%;
-    }
-    h1 {
-      font-size: 24px;
-    }
+  }
+  
+  .logo {
+    width: 33%;
+  }
 
-    h2, h3 {
-      font-size: 36px;
-    }
-
-    p {
-      font-size: 18px;
-    }
 }
