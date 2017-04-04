@@ -71,6 +71,7 @@ hr {
 .logo {
   width: calc(100% * 1/6);
   max-width:calc( 100px  * 589.0/371);
+  height:auto;
 }
 
 .name {
