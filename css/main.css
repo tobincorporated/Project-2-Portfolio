@@ -45,20 +45,20 @@ a {
   min-height: 48px;
 }
 
-header,
-main {
+hr {
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.fullwidth {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-figure {
+.sample {
   width: 33.33%;
   padding: 10px;
-}
-
-hr {
-  color: #999;
 }
 
 .grid {
@@ -100,7 +100,7 @@ hr {
     font-size: 24px;
   }
 
-  figure {
+  .sample {
     width: 50%;
     margin:0 auto 20px auto;
   }
@@ -125,7 +125,7 @@ hr {
     font-size: 18px;
   }
 
-  figure {
+  .sample {
       width: 100%;
   }
 
