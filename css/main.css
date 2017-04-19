@@ -69,17 +69,16 @@ hr {
 }
 
 .logo {
-  width: calc(100% * 1/6);
-  max-width:calc( 100px  * 589.0/371);
+  width: calc(100% * 4/6);
+  max-width: 400px;
   height: auto;
-  padding: auto;
   max-height: 100px;
 }
 
-.name {
-  width: calc(100% * 5/6);
-}
 
+.name {
+  width: calc(100% * 2/6);
+}
 .end {
   text-align: right;
   padding-right: 15px;
@@ -108,7 +107,10 @@ hr {
   }
 
   .name {
-    width: calc(100% * 2/3);
+    width: calc(100% * 1/2);
+  }
+  .logo {
+    width: calc(100% * 1/2);
   }
 }
 
