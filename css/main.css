@@ -9,6 +9,12 @@
   margin: 0 0 0 0;
 }
 
+header {
+  position: fixed;
+  background: inherit;
+  padding-top: 20px;
+  border-bottom: solid thin #999;
+}
 h1 {
   text-transform: uppercase;
   color: #900;
@@ -62,7 +68,7 @@ hr {
 }
 
 .grid {
-  padding-top: 15px;
+  /*padding-top: 15px;*/
   max-width: 1200px;
   width: 100%;
   background: linear-gradient(130deg, #fff, #ddd);
@@ -82,12 +88,21 @@ hr {
 .end {
   text-align: right;
   padding-right: 15px;
+
 }
 
 .centerpiece {
-  max-width: 800px;
   width: 100%;
   margin-top: 10px;
+  height: 500px;
+
+
+  background-image: url("../img/centerbig.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -112,6 +127,10 @@ hr {
   .logo {
     width: calc(100% * 1/2);
   }
+  .centerpiece{
+    background-image: url("../img/centersmall.jpg");
+    height: 350px;
+}
 }
 
 @media only screen and (max-width: 500px) {
@@ -131,6 +150,9 @@ hr {
 
   .sample {
       width: 100%;
+  }
+  .name{
+    width: calc(100% * 2/3);
   }
 
   .logo {
