@@ -75,7 +75,7 @@ hr {
 }
 
 .logo {
-  width: calc(100% * 4/6);
+  width: calc(100% * 3/6);
   max-width: 400px;
   height: auto;
   max-height: 100px;
@@ -83,7 +83,7 @@ hr {
 
 
 .name {
-  width: calc(100% * 2/6);
+  width: calc(100% * 3/6);
 }
 .end {
   text-align: right;
@@ -93,13 +93,13 @@ hr {
 
 .centerpiece {
   width: 100%;
-  margin-top: 10px;
-  height: 500px;
+  margin-top: 100px;
+  height: 600px;
 
 
   background-image: url("../img/centerbig.jpg");
   background-attachment: fixed;
-  background-position: top;
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: auto;
 
@@ -127,10 +127,7 @@ hr {
   .logo {
     width: calc(100% * 1/2);
   }
-  .centerpiece{
-    background-image: url("../img/centersmall.jpg");
-    height: 350px;
-}
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -147,7 +144,11 @@ hr {
   p {
     font-size: 18px;
   }
-
+  .centerpiece{
+    background-image: url("../img/centersmall.jpg");
+    margin-top: 100px;
+    height: 250px;
+}
   .sample {
       width: 100%;
   }
