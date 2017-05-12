@@ -20,11 +20,18 @@
                      srcset="img/Logo.svg 793w, img/Logo_Full.svg 1080w"
                      alt="Tobinc. Logo">
 
-                <a class="name linkedin" href="https://www.linkedin.com/in/zacharytobin" target="_blank">
-                    <h1 class="end">Zachary Tobin</h1>
-                    <p class="end">Technical Factotum</p>
-                </a>
-
+                <div class="name">
+                    <div class="dropbtn" onclick="dropfun()">
+                        <h1 class="end">Zachary Tobin</h1>
+                        <p class="end">Technical Factotum</p>
+                    </div>
+                     <!--href="https://www.linkedin.com/in/zacharytobin" target="_blank"-->
+                      <div class="dropdown-content hide" id="myDropdown">
+                          <a href="https://www.linkedin.com/in/zacharytobin" target="_blank">LinkedIn</a>
+                          <a href="https://www.github.com/tobincorporated" target="_blank">GitHub</a>
+                          <a href="https://www.tobincorporated.blogspot.com" target="_blank">Blog</a>
+                      </div>
+                </div>
 
             </header>
             <br>
@@ -79,5 +86,7 @@
 
             </main>
         </div>
+        
+        <script src="js/script.js"></script>
     </body>
 </html>

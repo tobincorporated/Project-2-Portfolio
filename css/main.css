@@ -69,9 +69,9 @@ hr {
 
 .grid {
     /*padding-top: 15px;*/
-    max-width: 1200px;
     width: 100%;
     background: linear-gradient(130deg, #fff, #ddd);
+    overflow: hidden;
 }
 
 .logo {
@@ -85,8 +85,17 @@ hr {
     background-color:#ddd ;
 }
 .name {
-    width: calc(100% * 3/6);
+/*    width: calc(100% * 3/6);*/
+/*max-width: 900px;*/
+    position: absolute;
+    right: 0;
+    padding: 10px;
+        cursor: hand;
+        cursor:pointer;
+    /*overflow:hidden;*/
 }
+
+
 
 .end {
     text-align: right;
@@ -94,7 +103,37 @@ hr {
 
 }
 
+.hide{
+     display: none;   
+}
+.show {
+    display: block;
+}
+
+
+.dropdown-content {
+    position: absolute;
+    right:0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 0;
+    display: block;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: #000;
+    color: #900;
+}
 .centerpiece {
+    z-index:0;
     width: 100%;
     margin-top: 100px;
     height: 600px;
@@ -129,6 +168,10 @@ hr {
     }
     .logo {
         width: calc(100% * 1/2);
+    }
+    
+    .dropdown-content a{
+        border-bottom: solid thin #777;
     }
 
 }
